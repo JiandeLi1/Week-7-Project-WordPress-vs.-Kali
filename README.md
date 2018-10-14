@@ -11,8 +11,7 @@ Time spent: **8** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.5
-  - [ ] GIF Walkthrough: 
-          ![GIF Walkthrough 1](https://thumbs.gfycat.com/RegalCoarseFinch-size_restricted.gif)
+![GIF Walkthrough 1](https://thumbs.gfycat.com/RegalCoarseFinch-size_restricted.gif)
   - [ ] Steps to recreate: 
           1. Create new page with any title
           2. Insert the following: `TEST!!![caption width="1" caption='<a href="' ">]</a><a href="http://onMouseOver='alert(1)'">XSS 💀</a>`
@@ -25,7 +24,7 @@ Time spent: **8** hours spent in total
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
     - Fixed in version: n/a
-  - [ ] GIF Walkthrough: ![GIF Walkthrough 2](https://thumbs.gfycat.com/RightBlueDuiker-size_restricted.gif)
+![GIF Walkthrough 2](https://thumbs.gfycat.com/RightBlueDuiker-size_restricted.gif)
   - [ ] Steps to recreate: 
     1. In Kali terminal run: `wpscan --url http://wpdistillery.vm --enumerate u`
   - [ ] Affected source code:
@@ -36,7 +35,7 @@ Time spent: **8** hours spent in total
     - Vulnerability types: Login Vulnerability
     - Tested in version: 4.2
     - Fixed in version: 
-  - [ ] GIF Walkthrough: ![GIF Walkthrough 3](https://thumbs.gfycat.com/PolishedConventionalBlackfish-size_restricted.gif)
+![GIF Walkthrough 3](https://thumbs.gfycat.com/PolishedConventionalBlackfish-size_restricted.gif)
   - [ ] Steps to recreate: 
     1. In Kali terminal run `wpscan --url http://wpdistillery.vm --wordlist /usr/share/wordlists/rockyou.txt --username admin`
   - [ ] Affected source code:
