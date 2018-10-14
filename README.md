@@ -11,7 +11,9 @@ Time spent: **8** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.5
+    
 ![GIF Walkthrough 1](https://thumbs.gfycat.com/RegalCoarseFinch-size_restricted.gif)
+
   - [ ] Steps to recreate: 
           1. Create new page with any title
           2. Insert the following: `TEST!!![caption width="1" caption='<a href="' ">]</a><a href="http://onMouseOver='alert(1)'">XSS 💀</a>`
@@ -23,8 +25,10 @@ Time spent: **8** hours spent in total
   - [ ] Summary: Due to the different login error messages, we can determine whether or not a user account exists on the WordPress install. Using wpscan we can quickly enumerate all usernames since our install does not limit log in attempts
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
-    - Fixed in version: n/a
+    - Fixed in version: -
+    
 ![GIF Walkthrough 2](https://thumbs.gfycat.com/RightBlueDuiker-size_restricted.gif)
+
   - [ ] Steps to recreate: 
     1. In Kali terminal run: `wpscan --url http://wpdistillery.vm --enumerate u`
   - [ ] Affected source code:
@@ -34,8 +38,10 @@ Time spent: **8** hours spent in total
   - [ ] Summary: Using a wordlist of common passwords and enumerating the users as we did previously, we can brute force passwords and retrieve login information for any user who chooses to use an insecure password.
     - Vulnerability types: Login Vulnerability
     - Tested in version: 4.2
-    - Fixed in version: 
+    - Fixed in version: -
+    
 ![GIF Walkthrough 3](https://thumbs.gfycat.com/PolishedConventionalBlackfish-size_restricted.gif)
+
   - [ ] Steps to recreate: 
     1. In Kali terminal run `wpscan --url http://wpdistillery.vm --wordlist /usr/share/wordlists/rockyou.txt --username admin`
   - [ ] Affected source code:
